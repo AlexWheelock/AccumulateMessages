@@ -24,11 +24,8 @@ Module MessageProgram
                 messages = ""
             Else
             End If
-        ElseIf messages = "" Then
-            messages = newmessage
         Else
-            messages = messages & vbCrLf _
-                & newMessage
+            messages += newMessage & vbCrLf
         End If
 
         Return messages
