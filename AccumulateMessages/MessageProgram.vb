@@ -13,6 +13,10 @@ Module MessageProgram
         'your code here
         Static messages As String = ""
 
+        'If clear, then messages is blank.
+        'If newmessage is blank, and messages is also blank, then messages is blank.
+        'If newmessage has something and messages is still blank, then messages = newmessage.
+        'Otherwise it concatenates the newmessage to its prior string.
         If clear Then
             messages = ""
         ElseIf newMessage = "" Then
