@@ -11,7 +11,7 @@ Module MessageProgram
 
     Function UserMessages(ByVal newMessage As String, ByVal clear As Boolean) As String
         'your code here
-        Dim messages As String = ""
+        Static messages As String = ""
 
         If clear Then
             messages = ""
@@ -19,11 +19,12 @@ Module MessageProgram
             If messages = "" Then
                 messages = ""
             Else
-                messages = newMessage
             End If
+        ElseIf messages = "" Then
+            messages = newmessage
         Else
-            messages = CStr($"{messages}" & vbCrLf _
-                & $"{newMessage}")
+            messages = messages & vbCrLf _
+                & newMessage
         End If
 
         Return messages
