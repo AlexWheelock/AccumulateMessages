@@ -1,4 +1,9 @@
-﻿
+﻿'Alex Wheelock
+'RCET 0265
+'Spring 2024
+'Accumulate Messages
+'https://github.com/AlexWheelock/AccumulateMessages.git
+
 Option Explicit On
 Option Strict On
 Option Compare Text
